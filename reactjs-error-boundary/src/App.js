@@ -1,11 +1,14 @@
 import './App.css';
 import { ErrorBoundary } from './lib';
+import MyComp from './mycomp'
 
 function App() {
   return (
-    <div className="App">
-      <ErrorBoundary />
-    </div>
+      <ErrorBoundary>
+        <>
+          <MyComp />
+        </>
+      </ErrorBoundary>
   );
 }
 
